@@ -1,0 +1,13 @@
+/home/panda/Code/DocuScope/src/DocuScope.Core/bin/Debug/net8.0/DocuScope.Core.deps.json
+/home/panda/Code/DocuScope/src/DocuScope.Core/bin/Debug/net8.0/DocuScope.Core.dll
+/home/panda/Code/DocuScope/src/DocuScope.Core/bin/Debug/net8.0/DocuScope.Core.pdb
+/home/panda/Code/DocuScope/src/DocuScope.Core/obj/Debug/net8.0/DocuScope.Core.GeneratedMSBuildEditorConfig.editorconfig
+/home/panda/Code/DocuScope/src/DocuScope.Core/obj/Debug/net8.0/DocuScope.Core.AssemblyInfoInputs.cache
+/home/panda/Code/DocuScope/src/DocuScope.Core/obj/Debug/net8.0/DocuScope.Core.AssemblyInfo.cs
+/home/panda/Code/DocuScope/src/DocuScope.Core/obj/Debug/net8.0/DocuScope.Core.csproj.CoreCompileInputs.cache
+/home/panda/Code/DocuScope/src/DocuScope.Core/obj/Debug/net8.0/DocuScope.Core.sourcelink.json
+/home/panda/Code/DocuScope/src/DocuScope.Core/obj/Debug/net8.0/DocuScope.Core.dll
+/home/panda/Code/DocuScope/src/DocuScope.Core/obj/Debug/net8.0/refint/DocuScope.Core.dll
+/home/panda/Code/DocuScope/src/DocuScope.Core/obj/Debug/net8.0/DocuScope.Core.pdb
+/home/panda/Code/DocuScope/src/DocuScope.Core/obj/Debug/net8.0/ref/DocuScope.Core.dll
+/home/panda/Code/DocuScope/src/DocuScope.Core/obj/Debug/net8.0/DocuScope.Core.csproj.AssemblyReference.cache

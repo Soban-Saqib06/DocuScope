@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ZFH1yi82NvKcN/Dkowbc29EFD/rL5Fvx2OnFlHlDdd94UpHRNq4HDF/QWORmPy6EW0PKkR38tudUkzGyDK4k9Q==",
+  "success": true,
+  "projectFilePath": "/home/panda/Code/DocuScope/src/DocuScope.Cli/DocuScope.Cli.csproj",
+  "expectedPackageFiles": [
+    "/home/panda/.nuget/packages/htmlagilitypack/1.13.0/htmlagilitypack.1.13.0.nupkg.sha512"
+  ],
+  "logs": []
+}
