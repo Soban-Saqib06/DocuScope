@@ -1,0 +1,3 @@
+namespace DocuScope.Web;
+
+//Get

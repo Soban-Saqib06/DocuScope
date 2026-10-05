@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "S0+V0Ue3BO1rq8zcx049BZkrbHjZdoBECFGBt2ZYT+c=",
+  "Source": "DocuScope.Web",
+  "BasePath": "_content/DocuScope.Web",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "DocuScope.Web/wwwroot",
+      "Source": "DocuScope.Web",
+      "ContentRoot": "/home/panda/Code/DocuScope/src/DocuScope.Web/wwwroot/",
+      "BasePath": "_content/DocuScope.Web",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/home/panda/Code/DocuScope/src/DocuScope.Web/wwwroot/index.html",
+      "SourceId": "DocuScope.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/panda/Code/DocuScope/src/DocuScope.Web/wwwroot/",
+      "BasePath": "_content/DocuScope.Web",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/index.html"
+    }
+  ]
+}

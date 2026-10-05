@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<body>
+    <h1>
+        DocuScope
+    </h1>
+
+    <div>
+        <input id="urlInput" placeholder="https://en.wikepedia.orh/wiki....">
+        <button onclick="indexUrl()">Index Url</button> <span id="indexStatus"
+            style="margin-left: 10px; color: gray;"></span>
+    </div>
+    <br>
+
+    <div>
+        <input id="keywordInput" placeholder="Enter keyword">
+        <button onclick="searchKeyword()"> Search </button>
+    </div>
+
+    <div id="results" style="margin-top: 20px; white-space: pre-line;"></div>
+</body>
+
+<script>
+        async function indexUrl() {
+            const url = document.getElementById("urlInput").value.trim();
+            const status = document.getElementById("indexStatus");
+            if (!url) {
+                alert("Please enter a URL first.");
+                return;
+            }
+            status.textContent = "⏳ Indexing, please wait...";
+            status.style.color = "blue";
+            try {
+                const response = await fetch("/api/index", {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ url: url })
+                });
+                const data = await response.json();
+                if (response.ok) {
+                    status.textContent = "✅ " + data.message;
+                    status.style.color = "green";
+                } else {
+                    status.textContent = "❌ " + (data.message || "Failed to index.");
+                    status.style.color = "red";
+                }
+            } catch (err) {
+                status.textContent = "❌ Connection error.";
+                status.style.color = "red";
+            }
+        }
+        async function searchKeyword() {
+            const keyword = document.getElementById("keywordInput").value.trim();
+            const resultsDiv = document.getElementById("results");
+            if (!keyword) {
+                alert("Please enter a keyword to search.");
+                return;
+            }
+            resultsDiv.innerHTML = "⏳ Searching...";
+            try {
+                const response = await fetch(`/api/search?keyword=${encodeURIComponent(keyword)}`);
+                const data = await response.json();
+                if (!response.ok) {
+                    resultsDiv.innerHTML = `<p style="color: red;">❌ ${data.message || "Error searching."}</p>`;
+                    return;
+                }
+                resultsDiv.innerHTML = "";
+                if (data.count === 0) {
+                    resultsDiv.innerHTML = `<p>No matches found for "<strong>${keyword}</strong>".</p>`;
+                } else {
+                    resultsDiv.innerHTML = `<h3>Found ${data.count} result(s) for "<em>${keyword}</em>":</h3>`;
+                    data.results.forEach((paragraph, idx) => {
+                        resultsDiv.innerHTML += `
+                            <div style="background: #f9f9f9; border-left: 4px solid #007bff; padding: 12px; margin-bottom: 12px; border-radius: 4px;">
+                                <strong>#${idx + 1}</strong>: ${paragraph}
+                            </div>
+                        `;
+                    });
+                }
+            } catch (err) {
+                resultsDiv.innerHTML = `<p style="color: red;">❌ Failed to reach server.</p>`;
+            }
+        }
+    </script>
+
+
+</html>

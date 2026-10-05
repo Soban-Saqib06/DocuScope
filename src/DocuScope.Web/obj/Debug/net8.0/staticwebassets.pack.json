@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "/home/panda/Code/DocuScope/src/DocuScope.Web/wwwroot/index.html",
+      "PackagePath": "staticwebassets/index.html"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.DocuScope.Web.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.DocuScope.Web.props",
+      "PackagePath": "build\\DocuScope.Web.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.DocuScope.Web.props",
+      "PackagePath": "buildMultiTargeting\\DocuScope.Web.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.DocuScope.Web.props",
+      "PackagePath": "buildTransitive\\DocuScope.Web.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

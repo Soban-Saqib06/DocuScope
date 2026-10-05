@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DocuScope.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6507379d14269d91ab97854ee5cce8aeb6550186")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eca1776c0679da073b69aad0e6a42c5211963157")]
 [assembly: System.Reflection.AssemblyProductAttribute("DocuScope.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DocuScope.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

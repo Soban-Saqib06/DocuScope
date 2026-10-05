@@ -1,0 +1,127 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/panda/Code/DocuScope/src/DocuScope.Web/DocuScope.Web.csproj": {}
+  },
+  "projects": {
+    "/home/panda/Code/DocuScope/src/DocuScope.Core/DocuScope.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/panda/Code/DocuScope/src/DocuScope.Core/DocuScope.Core.csproj",
+        "projectName": "DocuScope.Core",
+        "projectPath": "/home/panda/Code/DocuScope/src/DocuScope.Core/DocuScope.Core.csproj",
+        "packagesPath": "/home/panda/.nuget/packages/",
+        "outputPath": "/home/panda/Code/DocuScope/src/DocuScope.Core/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/panda/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "HtmlAgilityPack": {
+              "target": "Package",
+              "version": "[1.13.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.131/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/panda/Code/DocuScope/src/DocuScope.Web/DocuScope.Web.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/panda/Code/DocuScope/src/DocuScope.Web/DocuScope.Web.csproj",
+        "projectName": "DocuScope.Web",
+        "projectPath": "/home/panda/Code/DocuScope/src/DocuScope.Web/DocuScope.Web.csproj",
+        "packagesPath": "/home/panda/.nuget/packages/",
+        "outputPath": "/home/panda/Code/DocuScope/src/DocuScope.Web/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/panda/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/panda/Code/DocuScope/src/DocuScope.Core/DocuScope.Core.csproj": {
+                "projectPath": "/home/panda/Code/DocuScope/src/DocuScope.Core/DocuScope.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.131/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
